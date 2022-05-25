@@ -19,11 +19,23 @@
     <body>
         <header>
             <h1>SO - NUTS</h1>
+            <form method="post" enctype="application/x-www-form-urlencoded" action="/result">
+                <fieldset id="vraag1">
+                    <label for="leeftijd">Wat is uw Leeftijd?</label><br>
+                    <input type="number" id="leeftijd" name="inputvalue" required><br>
+                    <a href="#hcd">Volgende</a>
+                </fieldset>
+                <fieldset id="vraag2">
+                    <label for="land">In welk land bent u zelf geboren?</label><br>
+                    <input type="text" id="land" name="inputvalue" required><br>
+                    <a href="#hcd">Volgende</a>
+                </fieldset>
+                <fieldset id="vraag3">
+                    <label for="landMoeder">In welk land is uw moeder geboren?</label><br>
+                    <input type="text" id="landMoeder" name="inputvalue" required><br>
+                    <a href="#hcd">Volgende</a>
+                </fieldset>
+            </form>
         </header>
-        <section class="landing">
-            <h1>Personaliseer nu je SO-NUTS plan!</h1>
-            <p>Om een goed plan te maken moeten we je eerst beter leren kennen!</p>
-            <a href="intake">Start</a>
-        </section>
     </body>
 </html>

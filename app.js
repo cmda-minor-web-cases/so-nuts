@@ -10,8 +10,12 @@ app.set('views', './views/pages')
 
 app.use(express.static('public'))
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
   res.render('index')
+})
+
+app.get('/intake', (req, res) => {
+  res.render('intake')
 })
 
 app.listen(port, () => {
