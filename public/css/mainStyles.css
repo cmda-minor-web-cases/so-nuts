@@ -97,6 +97,36 @@ fieldset input[type=text], input[type=number] {
 fieldset input[type=text]:focus, input[type=number]:focus {
 	background-color: #FAC102;
 }
+fieldset span {
+	position: fixed;
+	top: 7em;
+	right: 2em;
+}
+fieldset span::after {
+    content: '';
+    position: absolute;
+    height: .5em;
+    display: block;
+    right: 0;
+    left: 0;
+    background: orange;
+    transition: .7s ease;
+	border-radius: 2em;
+	margin-top: .2em;
+	animation: appear .6s .3s both;
+}
+fieldset:first-of-type span::after {
+	width: 25%;
+}
+fieldset:nth-of-type(2) span::after {
+	width: 50%;
+}
+fieldset:nth-of-type(3) span::after {
+	width: 75%;
+}
+fieldset:nth-of-type(4) span::after {
+	width: 100%;
+}
 @keyframes heartbeat {
 	0% {
 		letter-spacing: 0;
@@ -109,4 +139,13 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 		letter-spacing: 0;
 		opacity: 1;
 	  }
+}
+@keyframes appear {
+	0% {
+		clip-path: polygon(0 0, -50% 0, 0 100%, 0 100%);
+	}
+	100% {
+		clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%);
+		opacity: 1;
+	}
 }
