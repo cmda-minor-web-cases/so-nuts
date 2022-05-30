@@ -28,7 +28,7 @@ header h1 a {
 	font-family: 'Playfair Display', serif;
 	font-weight: 600;
 	font-size: 2.2em;
-	margin: 20vh 0 5vh 5vw;
+	margin: 22vh 0 5vh 5vw;
 }
 .landing p {
 	font-weight: 400;
@@ -53,6 +53,9 @@ header h1 a {
 	align-items: center;
 	justify-content: center;
 }
+fieldset a {
+	animation: appear .6s .3s both;
+}
 fieldset a:first-of-type {
 	bottom: 4.5em; 
 }
@@ -69,14 +72,14 @@ fieldset:target {
 	align-items: center;
 	text-align: center;
 	gap: 1em;
-	animation: appear .6s  .3s both;
+	animation: appear .6s both;
 }
 fieldset label {
 	font-size: 1.5em;
 	font-weight: 500;
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	max-width: 90vw;
 }
 fieldset input[type=text], input[type=number] {
@@ -87,6 +90,11 @@ fieldset input[type=text], input[type=number] {
 	padding: .2em;
 	border: .15em solid black;
 	border-radius: 2em;
+	animation: appear .6s .6s both;
+	font-weight: 500;
+}
+fieldset input[type=text]:focus, input[type=number]:focus {
+	background-color: #FAC102;
 }
 @keyframes appear {
 	0% {
