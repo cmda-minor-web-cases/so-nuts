@@ -109,11 +109,11 @@ fieldset span::after {
     display: block;
     right: 0;
     left: 0;
-    background: orange;
+    background: #FAC102;
     transition: .7s ease;
 	border-radius: 2em;
 	margin-top: .2em;
-	animation: appear .6s .3s both;
+	animation: appear .4s linear;
 }
 fieldset:first-of-type span::after {
 	width: 25%;
