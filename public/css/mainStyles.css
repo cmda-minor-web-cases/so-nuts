@@ -13,6 +13,7 @@ header h1 {
 	background-color: #FAC102;
 	border-radius: 0 0 50% 50%/0 0 100% 100%;
 	width: 40vw;
+	animation: heartbeat 20s .3s infinite;
 }
 header h1 a {
 	text-decoration: none;
@@ -94,4 +95,17 @@ fieldset input[type=text], input[type=number] {
 }
 fieldset input[type=text]:focus, input[type=number]:focus {
 	background-color: #FAC102;
+}
+@keyframes heartbeat {
+	0% {
+		letter-spacing: 0;
+	  }
+	1% {
+	  letter-spacing: -0.1em;
+	  opacity: .8;
+	}
+	2% {
+		letter-spacing: 0;
+		opacity: 1;
+	  }
 }
