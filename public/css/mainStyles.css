@@ -76,12 +76,49 @@ fieldset:target {
 	gap: 1em;
 }
 fieldset label {
-	font-size: 1.5em;
-	font-weight: 500;
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 	font-size: 1.6em;
 	max-width: 90vw;
+}
+fieldset div {
+	margin-top: -2em;
+}
+fieldset div label {
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-left: 1em;
+}
+fieldset div {
+	text-align: left;
+}
+fieldset div input[type="radio"] {
+	appearance: none;
+	background-color: #fff;
+	width: 1.5em;
+	height: 1.5em;
+	box-shadow:0px 0px 0px .15em #FAC102 inset;
+	border-radius: 50%;
+	margin-top: 1.2em;
+}
+fieldset div input[type="radio"]:checked {
+	background-color: #FAC102;
+}
+fieldset div input[type="checkbox"] {
+	appearance: none;
+	background-color: #fff;
+	width: 1.5em;
+	height: 1.5em;
+	box-shadow:0px 0px 0px .15em #FAC102 inset;
+	margin-top: .5em;
+}
+fieldset div input[type="checkbox"]:checked::before {
+	content: '✔';
+}
+fieldset div input[type="checkbox"]:checked {
+	background-color: #FAC102;
+	margin-top: .8em;
 }
 fieldset input[type=text], input[type=number] {
 	height: 4vh;
